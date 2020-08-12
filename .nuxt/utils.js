@@ -150,7 +150,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: '/',
-      env: {}
+      env: {"apiUrl":"https://api.nuxtjs.dev"}
     }
     // Only set once
     if (!process.static && context.req) {
