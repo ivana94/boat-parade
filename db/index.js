@@ -4,6 +4,6 @@ module.exports = Object.assign(
 	{},
 	{
 		...require("./users"),
-		...require("./items"),
+		...require("./items")
 	}
 );

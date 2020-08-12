@@ -25,8 +25,8 @@ function pgConfig(url) {
 		idleTimeoutMillis: 30000,
 		ssl: dbUrl.hostname != "localhost" &&
 			dbUrl.hostname != "127.0.0.1" && {
-				rejectUnauthorized: false,
-			},
+				rejectUnauthorized: false
+			}
 	};
 
 	const pool = new pg.Pool(dbConfig);
@@ -36,7 +36,7 @@ function pgConfig(url) {
 	});
 
 	return (dbs[url] = {
-		query,
+		query
 	});
 
 	function query(query, params, callback) {
