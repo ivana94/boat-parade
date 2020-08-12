@@ -1,0 +1,15 @@
+{
+	"name": "boat-parade",
+	"scripts": {
+		"dev": "nuxt",
+		"build": "nuxt build",
+		"generate": "nuxt generate",
+		"start": "nuxt start"
+	},
+	"dependencies": {
+		"@nuxtjs/apollo": "^4.0.1-rc.3",
+		"@nuxtjs/axios": "^5.12.1",
+		"graphql-tag": "^2.11.0",
+		"nuxt": "^2.14.1"
+	}
+}
